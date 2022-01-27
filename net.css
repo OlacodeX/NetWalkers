@@ -1,0 +1,218 @@
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .top-nav-container nav.navbar{
+            display: flex;
+            padding: 30px 50px;
+        }
+        nav.navbar div.center{
+            margin-left: 90px;
+        }
+        nav.navbar div.right{
+            margin-left: auto;
+        }
+        .top-nav-container{
+            margin: 0;
+            padding: 0;
+            height: 70px;
+            border-bottom: 2px solid rgba(223, 215, 215, 0.604);
+        }
+                
+        .notification {
+        background-color: transparent;
+        color: rgb(34, 33, 33);
+        text-decoration: none;
+        padding: 15px 6px;
+        position: relative;
+        display: inline-block;
+        border-radius: 2px;
+        bottom: 15px;
+        }
+
+        .notification .badge {
+        position: absolute;
+        top: 18px;
+        right: 3px;
+        padding: 4px 5px;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        font-size: 7px;
+        }
+        .fa.fa-bell{
+            font-size: 25px;
+        }
+        .user img{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .name{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .center{
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .center .icon{
+            padding-right: 10px;
+        }
+
+        .logo img{
+            width: 150px;
+            height: 25px; 
+        } 
+        .content-wrapper{
+            display: flex;
+            padding: 5px 0px;
+            margin-top: 0px;
+        }
+        div.main-area{
+            margin-left: 230px;
+            width: 85%;
+            right: 0;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        .main-area .body{
+            border: 2px solid rgba(223, 215, 215, 0.604);
+            margin-bottom: 10px;
+            margin-top: 0px;
+            display: flex;
+            padding: 10px 20px;
+            height: 300px;
+        }
+        .main-area .body .right ul li{
+            list-style: none;
+            display: inline;
+        }
+        .main-area .body .right ul li a{
+            text-decoration: none;
+            color: rgba(219, 216, 216, 0.877);
+        }
+        .main-area .body .right ul li a.active{
+            color: rgba(54, 53, 53, 0.877);
+        }
+        .main-area .body .right{
+            margin-left: auto;
+            color: rgba(219, 216, 216, 0.877);
+        }
+        .body-icon{
+            width: 10px;
+            height: 10px;
+        }
+        .main-area .footer{
+            display: flex;
+            border: 2px solid rgba(223, 215, 215, 0.604);
+            color: rgba(34, 34, 34, 0.877);
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        .main-area .footer .right ul li a{
+            text-decoration: none;
+            color: rgba(34, 34, 34, 0.877);
+        }
+        .main-area .footer .right ul li{
+            list-style: none;
+            display: inline;
+        }
+        .main-area .footer .right{
+            margin-left: auto; 
+        }
+
+        /*Sidenav*/ 
+        .sidenav {
+        height: auto;
+        width: 15%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        padding-left: 0px;
+        margin-left: 0;
+        margin-top: 0;
+        background-color: transparent;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10px;
+        border: 2px solid rgba(223, 215, 215, 0.604);
+
+        }
+        .sidenav ul li{
+            list-style: none;
+        }
+        .sidenav a {
+        padding: 8px 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #747474;
+        display: block;
+        transition: 0.3s;
+        font-weight: bold;
+        margin-left: 0;
+        }
+
+        .sidenav a:hover {
+        color: #dfdddd;
+        }
+
+        .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        display: none;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        #main {
+        transition: margin-left .5s;
+        padding: 16px;
+        }
+        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+        .dropdown-container {
+        display: none;
+        background-color: transparent;
+        padding-left: 0px;
+        margin-left: 0;
+        }
+        .dropdown-container a{
+            background-color: rgb(173, 172, 172);
+            padding: 5px 10px;
+            margin-top: 3px;
+            margin-left: 0px;
+            color: rgba(34, 34, 34, 0.877);
+            font-size: 15px;
+        }
+
+        /* Optional: Style the caret down icon */
+        div.dropdown-btn{
+            display: flex;
+            padding-top: 10px;
+        }
+        .dropdown-btn:hover{
+            color: rgb(190, 16, 16);
+            border-bottom: 1px solid rgb(190, 16, 16);
+        }
+        svg.icon{
+            width: 20px;
+            height: 20px;
+        }
+        span.icon-span{
+            margin-left: auto;
+            float: left;
+            padding-right: 15px;
+        }
+        span.pre-icon{
+            padding-right: 10px;
+        }
+
+
+
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
